@@ -1,5 +1,14 @@
-import './globals.css'
+import "./globals.css";
+import type { Metadata } from "next";
+import { Figtree } from "next/font/google";
+import Header from "../components/Header/Header";
 
+const font = Figtree({ subsets: ["latin"] });
+
+export const metadata: Metadata = {
+  title: "ShopHub",
+  description: "Shop Your Favourite Products!!",
+};
 export default function RootLayout({
   children,
 }: {
@@ -7,7 +16,10 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }
