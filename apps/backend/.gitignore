@@ -1,7 +1,8 @@
 # compiled output
 /dist
 /node_modules
-
+src/IDP/firebaseIDP/firebase.json
+src/IDP/firebaseServiceAccount.json
 # Logs
 logs
 *.log
